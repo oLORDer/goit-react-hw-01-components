@@ -1,16 +1,23 @@
 import Profile from './Profile';
+import user from '../user';
 
-export const App = props => {
+import Statistics from './Statistics';
+import data from '../data';
+
+export default function App() {
   return (
-    console.log(props),
-    (
+    <>
       <Profile
-      // username={user.username}
-      // tag={user.tag}
-      // location={user.location}
-      // avatar={user.avatar}
-      // stats={user.stats}
+        avatar={user.avatar}
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
       />
-    )
+
+      <Statistics title="Upload stats" stats={data} />
+    </>
   );
-};
+}

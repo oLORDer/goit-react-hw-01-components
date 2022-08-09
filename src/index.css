@@ -1,5 +1,15 @@
 @import-normalize; /* bring in normalize.css styles */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,9 +17,86 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(250, 250, 250);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: 50px auto;
+  box-shadow: 0 0 40px rgba(155, 147, 147, 0.3);
+}
+
+.description {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+.name {
+  margin-bottom: 15px;
+}
+
+.tag {
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #000;
+  background-color: #f3f6f9;
+}
+
+.stats li:nth-child(2) {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+  width: 33.3333%;
+  padding: 15px 5px;
+  align-items: center;
+}
+
+.statistics {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 15px 5px;
+}
+
+.stat-list {
+  display: flex;
+  width: 100%;
+}
+
+.stat-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  color: #fff;
+  padding: 5px;
+  background-color: rgb(136, 130, 130);
 }
