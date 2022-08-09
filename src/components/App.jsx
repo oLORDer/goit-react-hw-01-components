@@ -1,16 +1,16 @@
-export const App = () => {
+import Profile from './Profile';
+
+export const App = props => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: 'red',
-      }}
-    >
-      React homework template
-    </div>
+    console.log(props),
+    (
+      <Profile
+      // username={user.username}
+      // tag={user.tag}
+      // location={user.location}
+      // avatar={user.avatar}
+      // stats={user.stats}
+      />
+    )
   );
 };
