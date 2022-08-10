@@ -1,0 +1,19 @@
+.transactionHistory {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.transactionHistory thead th {
+  background-color: rgb(101, 101, 197);
+  padding: 10px;
+  color: aliceblue;
+}
+
+tbody:nth-child(odd) {
+  background-color: rgb(224, 211, 211);
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+}
