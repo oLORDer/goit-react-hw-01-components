@@ -1,12 +1,12 @@
 export default function Statistics(props) {
   return (
-    <section class="statistics">
-      {props.title && <h2 class="title">{props.title}</h2>}
-      <ul class="stat-list">
+    <section className="statistics">
+      {props.title && <h2 className="title">{props.title}</h2>}
+      <ul className="stat-list">
         {props.stats.map(el => (
-          <li class="item" key={el.id}>
-            <span class="label">{el.label}</span>
-            <span class="percentage">{el.percentage}%</span>
+          <li className="item" key={el.id}>
+            <span className="label">{el.label}</span>
+            <span className="percentage">{el.percentage}%</span>
           </li>
         ))}
       </ul>
