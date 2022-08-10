@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import s from './statistics.module.css';
 
 export default function Statistics(props) {
@@ -23,3 +24,7 @@ export default function Statistics(props) {
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
+
+Statistics.propTypes = {
+  // username: PropTypes.string.isRequired,
+};
