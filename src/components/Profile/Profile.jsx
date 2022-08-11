@@ -29,9 +29,9 @@ export default function Profile(props) {
   );
 }
 
-Profile.defaultProps = {
-  username: 'err',
-};
+// Profile.defaultProps = {
+//   username: 'err',
+// };
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
