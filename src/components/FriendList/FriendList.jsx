@@ -21,6 +21,13 @@ FriendList.defaultProps = {
   props: [],
 };
 
-FriendList.propTypes = {
-  props: PropTypes.array,
+FriendListItem.propTypes = {
+  props: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+    })
+  ),
 };
