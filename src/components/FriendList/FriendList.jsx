@@ -5,10 +5,21 @@ import FriendListItem from './FriendListItem';
 export default function FriendList({ props }) {
   return (
     <ul className={s.friendList}>
-      <FriendListItem props={props} />
+      {props.map(el => (
+        <FriendListItem
+          key={el.id}
+          avatar={el.avatar}
+          name={el.name}
+          isOnline={el.isOnline}
+        />
+      ))}
     </ul>
   );
 }
+
+FriendList.defaultProps = {
+  props: [],
+};
 
 FriendList.propTypes = {
   props: PropTypes.array,
